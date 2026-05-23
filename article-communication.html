@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="EDをパートナーに伝えることへの抵抗感はなぜ生まれるのか。伝え方・二人で向き合うための考え方を対談形式で解説します。">
+<meta name="description" content="EDをパートナーに伝えることへの抵抗感はなぜ生まれるのか。沈黙がもたらす誤解・伝え方の具体的なポイント・二人で向き合うための考え方を整理します。">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet"></noscript>
-<title>「言えなかった」が一番ダメだった｜EDとパートナーへの伝え方｜バイアグラなび</title>
+<title>EDとパートナー——伝え方と二人の向き合い方｜バイアグラなび</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -181,294 +182,181 @@ footer .footer-inner{max-width:var(--max-w);margin:0 auto}
 .share-btn.share-line{border-color:#00b900;color:#00b900}
 @media(max-width:520px){.hero h1{font-size:22px}.related-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.need-nav{grid-template-columns:1fr}.nav__links{display:none}}
 
-/* ── R25対談スタイル ── */
-:root {
-  --clr-q:#0a0d14;
-  --clr-a-bg:#f0f5ff;
-  --clr-a-border:#1a5fa8;
-  --clr-tag:#e8f1fb;
-  --r-talk:14px;
-  --talk-icon-size:42px;
-}
-
-/* ヒーロー */
-.r25-hero{
-  background:#0a0d14;
-  color:#fff;
-  padding:0;
-  position:relative;
-  overflow:hidden;
-}
-.r25-hero__bg{
-  position:absolute;inset:0;
-  background:linear-gradient(135deg,#071d3f 0%,#0d2d5e 50%,#1a4a8a 100%);
-  opacity:.95;
-}
-.r25-hero__accent{
-  position:absolute;top:-60px;right:-60px;
-  width:260px;height:260px;
-  background:radial-gradient(circle,rgba(26,95,168,.35) 0%,transparent 70%);
-  border-radius:50%;
-}
-.r25-hero__inner{
-  position:relative;z-index:1;
-  max-width:680px;margin:0 auto;
-  padding:48px 20px 40px;
-}
-.r25-hero__label{
-  display:inline-flex;align-items:center;gap:6px;
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
-  border-radius:20px;padding:4px 12px;
-  font-size:11px;font-weight:700;letter-spacing:.12em;
-  color:rgba(255,255,255,.75);
-  margin-bottom:20px;
-}
-.r25-hero h1{
-  font-size:26px;font-weight:900;line-height:1.2;
-  letter-spacing:-.03em;margin-bottom:16px;
-}
-.r25-hero h1 em{
-  font-style:normal;color:#60a5fa;
-}
-.r25-hero__lead{
-  font-size:14px;color:rgba(255,255,255,.72);
-  line-height:1.75;margin-bottom:24px;
-}
-.r25-hero__persons{
-  display:flex;gap:12px;flex-wrap:wrap;
-}
-.r25-hero__person{
-  display:flex;align-items:center;gap:8px;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:8px;padding:8px 12px;
-}
-.r25-hero__person-icon{
-  width:32px;height:32px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:16px;flex-shrink:0;
-}
-.r25-hero__person-name{font-size:12px;font-weight:700;color:#fff}
-.r25-hero__person-role{font-size:10px;color:rgba(255,255,255,.55);margin-top:1px}
-.r25-hero__meta{
-  display:flex;gap:16px;font-size:11px;color:rgba(255,255,255,.5);
-  margin-top:20px;padding-top:20px;
-  border-top:1px solid rgba(255,255,255,.1);
-}
+/* ── 編集記事スタイル ── */
+.art-hero{background:linear-gradient(160deg,#071d3f,#1a5fa8);color:#fff;padding:48px 20px 44px}
+.art-hero__inner{max-width:680px;margin:0 auto}
+.art-cat{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#93c5fd;margin-bottom:12px}
+.art-title{font-size:25px;font-weight:900;line-height:1.22;letter-spacing:-.03em;margin-bottom:16px}
+.art-lead{font-size:14px;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:20px}
+.art-meta{display:flex;gap:16px;font-size:11px;color:rgba(255,255,255,.5);flex-wrap:wrap;padding-top:16px;border-top:1px solid rgba(255,255,255,.12)}
 
 /* チャプターナビ */
-.chapter-nav{
-  background:#fff;border-bottom:1px solid var(--clr-border);
-  position:sticky;top:var(--nav-h);z-index:90;
-  overflow-x:auto;
-}
-.chapter-nav__inner{
-  display:flex;gap:0;
-  max-width:680px;margin:0 auto;
-  padding:0 16px;
-}
-.chapter-nav__item{
-  flex-shrink:0;padding:12px 16px;
-  font-size:12px;font-weight:600;color:var(--clr-ink-3);
-  border-bottom:2px solid transparent;
-  cursor:pointer;white-space:nowrap;transition:all .15s;
-}
-.chapter-nav__item:hover,.chapter-nav__item.active{
-  color:var(--clr-primary);border-bottom-color:var(--clr-primary);
-}
+.ch-nav{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:56px;z-index:90;overflow-x:auto}
+.ch-nav__inner{display:flex;max-width:680px;margin:0 auto;padding:0 16px}
+.ch-nav__item{flex-shrink:0;padding:11px 14px;font-size:12px;font-weight:600;color:#718096;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all .15s}
+.ch-nav__item:hover,.ch-nav__item.on{color:#1a5fa8;border-bottom-color:#1a5fa8}
 
-/* 本文ラッパー */
-.r25-body{
-  max-width:680px;margin:0 auto;
-  padding:40px 20px 100px;
-}
+/* 本文 */
+.edit-body{max-width:680px;margin:0 auto;padding:36px 20px 100px}
 
-/* チャプター見出し */
-.chapter{margin-bottom:48px}
-.chapter-header{
-  display:flex;align-items:center;gap:12px;
-  margin-bottom:24px;padding-bottom:16px;
-  border-bottom:2px solid var(--clr-border);
-}
-.chapter-num{
-  font-size:11px;font-weight:900;letter-spacing:.1em;
-  color:var(--clr-primary);
-  background:var(--clr-primary-light);
-  padding:4px 10px;border-radius:4px;
-  flex-shrink:0;
-}
-.chapter-title{font-size:19px;font-weight:900;line-height:1.3}
+/* 大見出し */
+.edit-h2{font-size:20px;font-weight:900;line-height:1.3;margin:40px 0 16px;padding-left:14px;border-left:4px solid #1a5fa8}
+.edit-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#0a0d14}
 
-/* 対談バブル */
-.talk{margin-bottom:20px}
-.talk__speaker{
-  display:flex;align-items:center;gap:8px;
-  margin-bottom:6px;
-}
-.talk__icon{
-  width:var(--talk-icon-size);height:var(--talk-icon-size);
-  border-radius:50%;display:flex;align-items:center;justify-content:center;
-  font-size:20px;flex-shrink:0;
-  border:2px solid transparent;
-}
-.talk__icon--q{background:#0a0d14;border-color:#333}
-.talk__icon--a{background:var(--clr-primary-light);border-color:#bfdbfe}
-.talk__icon--dr{background:#e1f5ee;border-color:#6ee7b7}
-.talk__name{font-size:12px;font-weight:700;color:var(--clr-ink-2)}
-.talk__role{font-size:10px;color:var(--clr-ink-3);margin-left:4px}
+/* 本文段落 */
+.edit-body p{font-size:15px;line-height:1.85;margin-bottom:18px;color:#1a1a2e}
+.edit-body strong{font-weight:700;color:#0a0d14}
 
-.talk__bubble{
-  margin-left:calc(var(--talk-icon-size) + 12px);
-  border-radius:0 14px 14px 14px;
+/* 問いかけリード（各セクション冒頭） */
+.q-lead{
+  background:#f8fafc;
+  border-left:3px solid #1a5fa8;
+  border-radius:0 10px 10px 0;
   padding:14px 18px;
-  font-size:14px;line-height:1.8;
-  position:relative;
-}
-.talk__bubble--q{
-  background:var(--clr-ink);color:#fff;
-  border-radius:14px 14px 14px 0;
-}
-.talk__bubble--a{
-  background:var(--clr-a-bg);color:var(--clr-ink);
-  border-left:3px solid var(--clr-a-border);
-}
-.talk__bubble--dr{
-  background:var(--clr-success-light);color:var(--clr-ink);
-  border-left:3px solid var(--clr-success);
-}
-.talk__bubble strong{font-weight:700}
-.talk__bubble em{
-  font-style:normal;
-  background:rgba(26,95,168,.1);
-  padding:1px 4px;border-radius:3px;
-  color:var(--clr-primary);font-weight:600;
+  font-size:15px;font-weight:700;
+  color:#0a0d14;margin:24px 0 16px;
+  line-height:1.5;
 }
 
-/* インサイトボックス */
-.insight{
-  background:linear-gradient(135deg,#f0f5ff,#e8f1fb);
-  border:1px solid #bfdbfe;
-  border-radius:14px;padding:20px 24px;
-  margin:24px 0;
+/* SNSの声 */
+.voice{
+  background:#fff;border:1px solid #e2e8f0;
+  border-radius:12px;padding:16px 18px;
+  margin:20px 0;position:relative;
 }
-.insight__label{
-  font-size:10px;font-weight:700;letter-spacing:.12em;
-  color:var(--clr-primary);margin-bottom:8px;
+.voice::before{
+  content:'SNSの声';
+  position:absolute;top:-10px;left:16px;
+  background:#1a5fa8;color:#fff;
+  font-size:10px;font-weight:700;letter-spacing:.08em;
+  padding:2px 8px;border-radius:4px;
 }
-.insight__title{font-size:15px;font-weight:700;margin-bottom:8px}
-.insight p{font-size:13px;color:var(--clr-ink-2);line-height:1.75;margin:0}
+.voice blockquote{
+  font-size:14px;line-height:1.8;color:#2d3748;
+  font-style:italic;margin:0;
+  border:none;padding:0;
+}
+.voice__note{
+  font-size:12px;color:#718096;margin-top:8px;
+  line-height:1.6;
+}
 
-/* ポイントリスト */
-.point-list{
-  background:#fff;border:1px solid var(--clr-border);
-  border-radius:12px;overflow:hidden;margin:20px 0;
-}
-.point-list__title{
-  background:var(--clr-ink);color:#fff;
-  font-size:12px;font-weight:700;letter-spacing:.06em;
-  padding:10px 16px;
-}
-.point-item{
+/* ポイントカード */
+.point-cards{display:grid;gap:10px;margin:20px 0}
+.point-card{
+  background:#fff;border:1px solid #e2e8f0;
+  border-radius:10px;padding:14px 16px;
   display:flex;align-items:flex-start;gap:12px;
-  padding:14px 16px;border-bottom:1px solid var(--clr-border);
-  font-size:13px;line-height:1.7;
 }
-.point-item:last-child{border-bottom:none}
-.point-item__num{
-  width:22px;height:22px;border-radius:50%;
-  background:var(--clr-primary);color:#fff;
-  font-size:11px;font-weight:700;
+.point-card__num{
+  width:24px;height:24px;border-radius:50%;
+  background:#1a5fa8;color:#fff;
+  font-size:12px;font-weight:700;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;margin-top:1px;
 }
-.point-item__text{color:var(--clr-ink-2)}
-.point-item__text strong{color:var(--clr-ink);font-weight:700}
+.point-card__body{font-size:14px;line-height:1.7;color:#2d3748}
+.point-card__body strong{color:#0a0d14;font-weight:700}
 
-/* リサーチデータ */
-.research-box{
-  border:1px solid var(--clr-border);border-radius:12px;
-  overflow:hidden;margin:20px 0;
-}
-.research-box__header{
-  background:var(--clr-bg);padding:12px 16px;
-  font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--clr-ink-3);
-  border-bottom:1px solid var(--clr-border);
-  display:flex;align-items:center;gap:6px;
-}
-.research-box__body{padding:16px;}
-.research-stat{
-  display:flex;align-items:center;gap:12px;margin-bottom:12px;
-}
-.research-stat:last-child{margin-bottom:0}
-.research-stat__label{font-size:12px;color:var(--clr-ink-2);width:160px;flex-shrink:0}
-.research-stat__bar-wrap{flex:1;background:var(--clr-bg);border-radius:4px;height:8px;overflow:hidden}
-.research-stat__bar{height:100%;border-radius:4px;background:var(--clr-primary)}
-.research-stat__val{font-size:12px;font-weight:700;color:var(--clr-primary);width:36px;text-align:right;flex-shrink:0}
+/* データバー */
+.data-bar{margin:8px 0}
+.data-bar__label{font-size:12px;color:#4a5568;margin-bottom:4px;display:flex;justify-content:space-between}
+.data-bar__track{height:7px;background:#e2e8f0;border-radius:4px;overflow:hidden}
+.data-bar__fill{height:100%;border-radius:4px;background:#1a5fa8}
 
-/* 区切り */
-.chapter-divider{
-  text-align:center;color:var(--clr-border);
-  font-size:20px;letter-spacing:8px;
-  margin:32px 0;
+/* インサイトボックス */
+.insight{
+  background:linear-gradient(135deg,#e8f1fb,#dbeafe);
+  border:1px solid #bfdbfe;border-radius:12px;
+  padding:18px 20px;margin:22px 0;
 }
+.insight__eyebrow{font-size:10px;font-weight:700;letter-spacing:.12em;color:#1a5fa8;margin-bottom:6px}
+.insight__title{font-size:15px;font-weight:700;margin-bottom:8px}
+.insight p{font-size:13px;color:#374151;line-height:1.75;margin:0}
 
-/* 医師注釈 */
-.dr-note{
+/* 注意ボックス */
+.note-box{
   background:#fff8e1;border-left:3px solid #f59e0b;
   border-radius:0 8px 8px 0;
-  padding:12px 16px;margin:16px 0;
-  font-size:12px;color:#78350f;line-height:1.7;
+  padding:12px 16px;margin:18px 0;
+  font-size:13px;color:#78350f;line-height:1.7;
 }
-.dr-note strong{font-weight:700}
+.note-box strong{font-weight:700}
 
-/* シェア */
-.share-section{
-  text-align:center;padding:32px 0;
-  border-top:1px solid var(--clr-border);
-  margin-top:32px;
+.warn-edit{
+  background:#fde8e8;border-left:3px solid #a32d2d;
+  border-radius:0 8px 8px 0;
+  padding:12px 16px;margin:18px 0;
+  font-size:13px;color:#7f1d1d;line-height:1.7;
 }
-.share-section p{font-size:13px;color:var(--clr-ink-3);margin-bottom:16px}
-.share-btns{display:flex;gap:10px;justify-content:center}
-.share-btn-r{
-  display:flex;align-items:center;gap:6px;
-  font-size:13px;font-weight:600;padding:10px 20px;
-  border-radius:8px;border:1.5px solid;cursor:pointer;background:#fff;
+
+/* メカニズム図 */
+.mechanism{
+  background:#fff;border:1px solid #e2e8f0;
+  border-radius:12px;overflow:hidden;margin:20px 0;
 }
-.share-btn-r.x-btn{border-color:#000;color:#000}
-.share-btn-r.line-btn{border-color:#00b900;color:#00b900}
+.mechanism__title{
+  background:#0a0d14;color:rgba(255,255,255,.75);
+  font-size:11px;font-weight:700;letter-spacing:.08em;
+  padding:10px 16px;
+}
+.mechanism__steps{padding:16px}
+.mstep{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:10px 0;border-bottom:1px solid #f0f2f5;
+  font-size:13px;line-height:1.65;color:#374151;
+}
+.mstep:last-child{border-bottom:none}
+.mstep__icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.mstep__arrow{text-align:center;color:#1a5fa8;font-weight:700;font-size:16px;padding:4px 0}
+
+/* まとめボックス */
+.summary{
+  background:#0a0d14;color:#fff;
+  border-radius:14px;padding:24px 20px;margin:32px 0;
+}
+.summary__title{font-size:14px;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,.6);margin-bottom:14px}
+.summary ul{list-style:none;padding:0;margin:0}
+.summary li{font-size:14px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);display:flex;gap:10px;line-height:1.6}
+.summary li:last-child{border-bottom:none}
+.summary li::before{content:'✓';color:#60a5fa;font-weight:700;flex-shrink:0}
 
 /* CTA */
-.r25-cta{
+.edit-cta{
   background:linear-gradient(135deg,#0a2a5e,#1a5fa8);
-  color:#fff;border-radius:18px;
-  padding:32px 24px;margin:32px 0;text-align:center;
+  color:#fff;border-radius:16px;
+  padding:28px 22px;margin:32px 0;text-align:center;
 }
-.r25-cta h3{font-size:18px;font-weight:900;margin-bottom:8px}
-.r25-cta p{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:20px;line-height:1.7}
-.r25-cta a{
-  display:inline-block;background:#fff;color:var(--clr-primary);
-  font-size:14px;font-weight:700;padding:12px 28px;border-radius:10px;
-}
+.edit-cta h3{font-size:18px;font-weight:900;margin-bottom:8px}
+.edit-cta p{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:18px;line-height:1.7}
+.edit-cta a{display:inline-block;background:#fff;color:#1a5fa8;font-size:14px;font-weight:700;padding:12px 26px;border-radius:10px}
 
-/* related */
-.r25-related{background:var(--clr-primary-light);padding:32px 20px}
-.r25-related__inner{max-width:680px;margin:0 auto}
-.r25-related h2{font-size:16px;font-weight:700;margin-bottom:16px}
-.r25-related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.r25-related-card{
-  background:#fff;border:1px solid var(--clr-border);
-  border-radius:10px;padding:14px;cursor:pointer;
-}
-.r25-related-card:hover{border-color:var(--clr-primary)}
-.r25-related-card__cat{font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--clr-primary);margin-bottom:4px}
-.r25-related-card__title{font-size:12px;font-weight:600;line-height:1.5}
+/* 関連記事 */
+.edit-related{background:#e8f1fb;padding:28px 20px}
+.edit-related__inner{max-width:680px;margin:0 auto}
+.edit-related h2{font-size:16px;font-weight:700;margin-bottom:14px}
+.edit-related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.edit-related-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px;cursor:pointer}
+.edit-related-card:hover{border-color:#1a5fa8}
+.edit-related-card__cat{font-size:10px;font-weight:700;letter-spacing:.1em;color:#1a5fa8;margin-bottom:4px}
+.edit-related-card__title{font-size:12px;font-weight:600;line-height:1.5;color:#0a0d14}
+
+/* シェア */
+.edit-share{text-align:center;padding:28px 0;border-top:1px solid #e2e8f0;margin-top:28px}
+.edit-share p{font-size:13px;color:#718096;margin-bottom:14px}
+.edit-share-btns{display:flex;gap:10px;justify-content:center}
+.share-btn-e{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:10px 18px;border-radius:8px;border:1.5px solid;cursor:pointer;background:#fff}
+.share-btn-e.x-btn{border-color:#000;color:#000}
+.share-btn-e.line-btn{border-color:#00b900;color:#00b900}
+
+/* 免責 */
+.disc-sm{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;margin:20px 0;font-size:11px;color:#718096;line-height:1.8}
+.disc-sm strong{color:#4a5568}
 
 @media(max-width:520px){
-  .r25-hero h1{font-size:21px}
-  .r25-related-grid{grid-template-columns:1fr}
-  .chapter-nav__inner{padding:0 8px}
-  .chapter-nav__item{padding:10px 10px;font-size:11px}
-  .research-stat__label{width:120px;font-size:11px}
+  .art-title{font-size:20px}
+  .edit-related-grid{grid-template-columns:1fr}
+  .ch-nav__item{font-size:11px;padding:10px 10px}
 }
 </style>
 </head>
@@ -478,332 +366,219 @@ footer .footer-inner{max-width:var(--max-w);margin:0 auto}
     <a href="compare.html">薬を比較</a>
     <a href="article-compare.html">薬の選び方</a>
     <a href="article-danger.html">飲み合わせ</a>
+    <a href="article-psychology.html">心理とED</a>
+    <a href="article-sns.html">SNSの声</a>
     <a href="shindan.html">診断</a>
   </div>
   <a href="shindan.html" class="nav__cta">診断で選ぶ →</a>
 </nav>
 
-<div class="r25-hero">
-  <div class="r25-hero__bg"></div>
-  <div class="r25-hero__accent"></div>
-  <div class="r25-hero__inner">
-    <div class="r25-hero__label">
-      <span>💬</span> 対談記事 / パートナーシップ
-    </div>
-    <h1>「言えなかった」が<br><em>一番ダメだった</em><br><span style="font-size:.65em;font-weight:700;color:rgba(255,255,255,.8)">EDとパートナーへの<br>伝え方・向き合い方</span></h1>
-    <p class="r25-hero__lead">EDを抱えているとき、一番つらいのは「一人で抱え込むこと」かもしれません。パートナーへの伝え方、二人で向き合う方法について、専門家と考えます。</p>
-    <div class="r25-hero__persons">
-      <div class="r25-hero__person">
-        <div class="r25-hero__person-icon" style="background:#1e3a5f">🧠</div>
-        <div>
-          <div class="r25-hero__person-name">田中 由美 先生（仮名）</div>
-          <div class="r25-hero__person-role">臨床心理士・性に関するカウンセリング専門</div>
-        </div>
-      </div>
-      <div class="r25-hero__person">
-        <div class="r25-hero__person-icon" style="background:#374151">✏️</div>
-        <div>
-          <div class="r25-hero__person-name">編集部 佐藤</div>
-          <div class="r25-hero__person-role">バイアグラなび編集担当</div>
-        </div>
-      </div>
-    </div>
-    <div class="r25-hero__meta">
-      <span>2026年5月公開</span>
-      <span>約8分で読める</span>
-      <span>臨床心理士監修</span>
+<div class="art-hero">
+  <div class="art-hero__inner">
+    <p class="art-cat">パートナーシップ</p>
+    <h1 class="art-title">EDとパートナー<br><span style="font-size:.72em;font-weight:700;opacity:.85">伝え方と<br>二人の向き合い方</span></h1>
+    <p class="art-lead">EDを「言えない」でいることが、関係を悪化させるケースは少なくありません。伝え方・沈黙がもたらす誤解・二人で向き合うための考え方を整理します。</p>
+    <div class="art-meta">
+      <span>2026年5月</span>
+      <span>約7分で読める</span>
+      <span>一般的な医療・心理情報をもとに構成</span>
     </div>
   </div>
 </div>
 
-<nav class="chapter-nav" aria-label="記事内ナビ">
-  <div class="chapter-nav__inner">
-    <div class="chapter-nav__item active" data-target="c1">言えない理由</div>
-    <div class="chapter-nav__item" data-target="c2">伝え方の実践</div>
-    <div class="chapter-nav__item" data-target="c3">二人で向き合う</div>
-    <div class="chapter-nav__item" data-target="c4">相手への理解</div>
+<nav class="ch-nav" aria-label="記事内ナビ">
+  <div class="ch-nav__inner">
+    <div class="ch-nav__item on" data-t="c1">言えない理由</div>
+    <div class="ch-nav__item" data-t="c2">沈黙の影響</div>
+    <div class="ch-nav__item" data-t="c3">伝え方</div>
+    <div class="ch-nav__item" data-t="c4">二人で向き合う</div>
   </div>
 </nav>
 
-<div class="r25-body">
+<div class="edit-body">
 
-  <div class="bc" style="padding:0 0 24px"><a href="index.html">ホーム</a><span style="margin:0 6px;color:#718096">›</span><span>パートナーシップ</span></div>
-
-  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin:24px 0;font-size:11px;color:#718096;line-height:1.8">
-  <strong style="color:#4a5568">【重要事項】</strong>
-  本記事は一般的な医療・心理情報の提供を目的としています。個人差があり、特定の効果を保証するものではありません。ED治療薬は医師の処方が必要です。本サイトはアフィリエイト広告（A8.net）を利用しています。
+  <div class="bc" style="padding:0 0 20px"><a href="index.html">ホーム</a><span style="margin:0 6px;color:#718096">›</span><span>パートナーシップ</span></div>
+  <div class="disc-sm">
+  <strong>【表示事項】</strong>
+  本記事は一般的な医療・心理情報の提供を目的としています。個人差があり、特定の効果を保証するものではありません。ED治療薬は医師の処方が必要な医薬品です。本サイトはアフィリエイト広告（A8.net）を利用しています。
 </div>
 
-  <div class="chapter" id="c1">
-    <div class="chapter-header">
-      <span class="chapter-num">CHAPTER 01</span>
-      <h2 class="chapter-title">なぜ「言えない」のか——沈黙が問題を大きくする</h2>
-    </div>
+  <section id="c1">
+    <h2 class="edit-h2">「言えない」理由——3つの心理的障壁</h2>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
-      </div>
-      <div class="talk__bubble talk__bubble--q">
-        SNSのコメントを見ていると、EDを抱えながら「パートナーに言えない」という方が多いですね。言えない理由って何なんでしょうか。
-      </div>
-    </div>
+    <p>EDを経験したとき、多くの場合パートナーに伝えることへの強い抵抗感が生まれます。SNSのコメントを分析すると、「言えない」理由は主に3つに集約されます。</p>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span><span class="talk__role">（臨床心理士）</span>
+    <div class="point-cards">
+      <div class="point-card">
+        <div class="point-card__num">1</div>
+        <div class="point-card__body"><strong>男性としての自信を失ったと思われる恐怖</strong><br>「男として失格だと思われる」という恐れが、開示を妨げる最も多い理由とされています</div>
       </div>
-      <div class="talk__bubble talk__bubble--a">
-        主に3つの理由があります。<em>「男としての自信を失ったと思われる恐怖」</em>、<em>「相手を失望させることへの恐れ」</em>、そして<em>「自分の問題として抱え込む傾向」</em>です。特に日本の男性は「弱さを見せてはいけない」という文化的なプレッシャーを強く受けています。
+      <div class="point-card">
+        <div class="point-card__num">2</div>
+        <div class="point-card__body"><strong>相手を失望させることへの恐れ</strong><br>「がっかりされたくない」「関係が終わるかもしれない」という不安</div>
+      </div>
+      <div class="point-card">
+        <div class="point-card__num">3</div>
+        <div class="point-card__body"><strong>「自分で解決すべき」という思い込み</strong><br>弱さを見せることへの文化的・社会的プレッシャーが「一人で抱え込む」につながる</div>
       </div>
     </div>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
-      </div>
-      <div class="talk__bubble talk__bubble--q">
-        言えないでいることで、関係にどんな影響が出ますか？
-      </div>
+    <div class="voice">
+      <blockquote>「黙って何とかしようとしてたけど、結局バレて余計こじれた」</blockquote>
+      <div class="voice__note">SNSで見られる声。隠し続けることで関係に別の問題が生まれるケースがあります。</div>
     </div>
+  </section>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
-      </div>
-      <div class="talk__bubble talk__bubble--a">
-        <strong>相手側が「自分のせいかも」と思い始める</strong>ことが多いです。「魅力がないから？」「嫌われた？」と。説明がない状態で親密な関係が減ると、相手は何か自分に原因があると考えてしまう。実は男性側が一番傷ついているのに、相手も傷ついている。沈黙が二人の間に溝を作っていきます。
-      </div>
+  <section id="c2" style="margin-top:40px">
+    <h2 class="edit-h2">沈黙がもたらす誤解——相手側に何が起きているか</h2>
+
+    <p>EDを抱えながら何も伝えない場合、パートナー側では説明のない変化として受け取られます。性的な場面が減る・うまくいかない——という事実だけが相手に届きます。</p>
+
+    <p>この状況で多くのパートナーが経験するのが、<strong>「自分のせいかもしれない」という誤解</strong>です。</p>
+
+    <div class="voice">
+      <blockquote>「彼が最近全然求めてこない。私のことが嫌いになったのかな、と思って不安だった。後から事情を聞いてやっと理解できた」</blockquote>
+      <div class="voice__note">パートナー側の視点として見られる声。説明がない変化は、相手に誤った解釈を与えます。</div>
     </div>
 
     <div class="insight">
-      <div class="insight__label">🔑 KEY POINT</div>
-      <div class="insight__title">沈黙は「二人の問題」を「一人の問題」に変えてしまう</div>
-      <p>EDを黙って抱え込むことで、パートナーが「自分に原因がある」と誤解するケースが多く報告されています。説明のない距離は、想像による誤解を生みます。</p>
+      <div class="insight__eyebrow">POINT</div>
+      <div class="insight__title">沈黙は「自分の問題」を「二人の問題」に変える</div>
+      <p>男性側が一人で抱え込んでいるとき、パートナー側も独自に「自分に原因がある」と悩んでいることが多い。結果として、二人がそれぞれ別の不安を抱えた状態になります。説明のない距離は想像による誤解を生みます。</p>
     </div>
+  </section>
 
-  </div>
+  <section id="c3" style="margin-top:40px">
+    <h2 class="edit-h2">伝え方——具体的なポイント</h2>
 
-  <div class="chapter-divider">・・・</div>
+    <p>「伝えた方がいい」とわかっていても、言葉が出てこないことは多いです。心理的な研究やカウンセリングの知見では、以下のポイントが有効とされています。</p>
 
-  <div class="chapter" id="c2">
-    <div class="chapter-header">
-      <span class="chapter-num">CHAPTER 02</span>
-      <h2 class="chapter-title">伝え方の実践——「どう言えばいい？」への答え</h2>
-    </div>
+    <div class="q-lead">「どう言えばいい？」——伝える際の4つのポイント</div>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
+    <div class="point-cards">
+      <div class="point-card">
+        <div class="point-card__num">1</div>
+        <div class="point-card__body">
+          <strong>自分の状態を主語にする</strong><br>
+          「うまくいかない」ではなく「自分が緊張している・戸惑っている」という形。相手を責める言葉にならず、自分の内側の状態を伝える
+        </div>
       </div>
-      <div class="talk__bubble talk__bubble--q">
-        「伝えた方がいい」とはわかっても、実際の言葉が出てこない人が多いと思います。どう伝えればいいですか？
+      <div class="point-card">
+        <div class="point-card__num">2</div>
+        <div class="point-card__body">
+          <strong>「あなたのせいではない」を明確にする</strong><br>
+          相手への気持ちや魅力とは無関係であることを伝えることで、相手の誤解を解く
+        </div>
       </div>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
+      <div class="point-card">
+        <div class="point-card__num">3</div>
+        <div class="point-card__body">
+          <strong>タイミングと場所を選ぶ</strong><br>
+          その場ではなく、リラックスした状態・日常の会話の延長として話す。食事中やドライブ中など、目を合わせなくていい場面が話しやすいとされている
+        </div>
       </div>
-      <div class="talk__bubble talk__bubble--a">
-        大事なのは<em>「自分の気持ちを主語にする」</em>ことです。「最近うまくいかなくて、自分でも戸惑っている」「緊張してしまうことがある」という形。相手を安心させようとする必要はなく、自分の状態を正直に伝えるだけでいい。完璧な説明じゃなくていいんです。
-      </div>
-    </div>
-
-    <div class="point-list">
-      <div class="point-list__title">伝える際のポイント</div>
-      <div class="point-item">
-        <div class="point-item__num">1</div>
-        <div class="point-item__text"><strong>自分の状態を主語にする</strong>——「うまくいかない」ではなく「自分が緊張している・戸惑っている」</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">2</div>
-        <div class="point-item__text"><strong>相手のせいではないことを伝える</strong>——「あなたへの気持ちの問題ではない」を明確にする</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">3</div>
-        <div class="point-item__text"><strong>タイミングを選ぶ</strong>——その場ではなく、リラックスした状態・場所で話す</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">4</div>
-        <div class="point-item__text"><strong>医師に相談していることを伝える</strong>——「対処している」という姿勢が相手の安心につながる</div>
+      <div class="point-card">
+        <div class="point-card__num">4</div>
+        <div class="point-card__body">
+          <strong>「対処している」姿勢を伝える</strong><br>
+          「医師に相談している」「オンラインクリニックを調べた」という事実は、パートナーへの誠実さの表れになる
+        </div>
       </div>
     </div>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
+    <div class="note-box">
+      <strong>完璧な説明は必要ない：</strong> 「うまく説明できない」という感覚は自然なことです。「最近緊張してしまうことがある」というシンプルな言葉だけでも、相手に届くことがあります。
+    </div>
+  </section>
+
+  <section id="c4" style="margin-top:40px">
+    <h2 class="edit-h2">二人で向き合う——関係性がEDを改善することもある</h2>
+
+    <p>心因性のEDは、<strong>パートナーとの関係の質と強く連動している</strong>ことが知られています。「この人となら失敗しても大丈夫」という安心感が副交感神経を優位にし、結果として勃起反応が起きやすくなるという報告があります。</p>
+
+    <div class="voice">
+      <blockquote>「男が頑張りすぎないこと。逃かせようと意気込むと女性は緊張と焦りを感じイきにくくなる」</blockquote>
+      <div class="voice__note">SNSで多くの共感を集めていた声（いいね54）。「結果を出さなければ」というプレッシャーが双方向に作用することを指摘しています。目的志向より、その場の心地よさに集中する方が関係全体として良い結果につながるとされています。</div>
+    </div>
+
+    <div class="voice">
+      <blockquote>「パートナーが『気にしないよ』と言ってくれてから、逆に気にならなくなった」</blockquote>
+      <div class="voice__note">「気にしないよ」という一言がパフォーマンス不安を大きく軽減するケースがあります。</div>
+    </div>
+
+    <h3 class="edit-h3">パートナー側が知っておくと良いこと</h3>
+
+    <div class="point-cards">
+      <div class="point-card">
+        <div class="point-card__num">1</div>
+        <div class="point-card__body"><strong>「自分のせいではない」という理解</strong><br>心因性のEDはパートナーへの気持ちとは無関係に起きます</div>
       </div>
-      <div class="talk__bubble talk__bubble--a">
-        「ED治療薬を使っている」ことを伝えることへの抵抗を感じる方も多いですが、<strong>「医師に相談して対処しようとしている」という事実は、パートナーへの誠実さの表れ</strong>です。隠すことより、対処している姿勢の方が関係を深めることが多い。
+      <div class="point-card">
+        <div class="point-card__num">2</div>
+        <div class="point-card__body"><strong>責めない・急かさない</strong><br>「なんで？」「またダメだった」という言葉が予期性EDのループを強化します</div>
+      </div>
+      <div class="point-card">
+        <div class="point-card__num">3</div>
+        <div class="point-card__body"><strong>「気にしないよ」の言葉</strong><br>これだけでパフォーマンス不安を大きく和らげることがあります</div>
+      </div>
+      <div class="point-card">
+        <div class="point-card__num">4</div>
+        <div class="point-card__body"><strong>相談・受診を一緒に後押しする</strong><br>「病院行けば？」ではなく「一緒に調べてみよう」という姿勢が、行動のハードルを下げます</div>
       </div>
     </div>
 
-  </div>
-
-  <div class="chapter-divider">・・・</div>
-
-  <div class="chapter" id="c3">
-    <div class="chapter-header">
-      <span class="chapter-num">CHAPTER 03</span>
-      <h2 class="chapter-title">二人で向き合う——関係性がEDを改善することもある</h2>
+    <div class="summary">
+      <div class="summary__title">この記事のまとめ</div>
+      <ul>
+        <li>「言えない」背景には、失望への恐れ・男性プライドへの文化的プレッシャーがある</li>
+        <li>沈黙は相手に「自分のせい？」という誤解を与えやすい</li>
+        <li>伝える際は「自分の状態を主語に」「相手のせいではないことを明確に」が基本</li>
+        <li>「安心できる関係」そのものが心因性EDの改善につながるケースがある</li>
+        <li>「頑張りすぎない」「気にしないよ」という姿勢が、二人にとって有効なアプローチ</li>
+      </ul>
     </div>
 
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
-      </div>
-      <div class="talk__bubble talk__bubble--q">
-        「パートナーとの関係が良くなったらEDも改善した」という話、実際にあるんですか？
-      </div>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
-      </div>
-      <div class="talk__bubble talk__bubble--a">
-        非常に多いです。<em>心因性のEDは関係性の質と強く連動している</em>ことが知られています。「この人なら失敗してもいい」という安心感が、緊張をほぐし、副交感神経を優位にする。パートナーとの信頼関係そのものが、薬と同様の効果を生む場合があります。
-      </div>
-    </div>
-
-    <div class="insight">
-      <div class="insight__label">💡 INSIGHT</div>
-      <div class="insight__title">「安心できる関係」が心因性EDを改善する</div>
-      <p>「失敗しても大丈夫」という安心感は、パフォーマンス不安を根本から解消します。SNSのコメントでも「パートナーが理解してくれてから楽になった」という声が多く見られます。</p>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
-      </div>
-      <div class="talk__bubble talk__bubble--q">
-        逆に、「うまくいかせよう」と相手が頑張りすぎることが、プレッシャーになることもありますか？
-      </div>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
-      </div>
-      <div class="talk__bubble talk__bubble--a">
-        あります。SNSのコメントにも「男が頑張りすぎないこと、逃かせよう逃かせようと意気込むと相手は緊張と焦りを感じる」という声がありましたね。これはまさに正しい観察で、<strong>「結果を出さなければ」というプレッシャーが双方向に作用する</strong>んです。目的志向より、その場の心地よさに集中する方が、結果的にうまくいくことが多い。
-      </div>
-    </div>
-
-  </div>
-
-  <div class="chapter-divider">・・・</div>
-
-  <div class="chapter" id="c4">
-    <div class="chapter-header">
-      <span class="chapter-num">CHAPTER 04</span>
-      <h2 class="chapter-title">相手への理解——パートナー側が知っておくべきこと</h2>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--q">✏️</div>
-        <span class="talk__name">佐藤</span>
-      </div>
-      <div class="talk__bubble talk__bubble--q">
-        パートナー側（相手）が知っておくと良いことはありますか？
-      </div>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
-      </div>
-      <div class="talk__bubble talk__bubble--a">
-        一番大切なのは<em>「自分のせいではない」という理解</em>です。そして、焦らずに待てること。「どうしたの？」「なんで？」と詰問するのではなく、「気にしないよ」「大丈夫」という言葉が、相手の緊張を和らげます。<strong>責めないこと、急かさないこと、それだけで状況が変わることがあります。</strong>
-      </div>
-    </div>
-
-    <div class="point-list">
-      <div class="point-list__title">パートナー側が知っておくと良いこと</div>
-      <div class="point-item">
-        <div class="point-item__num">1</div>
-        <div class="point-item__text"><strong>「自分のせいではない」</strong>——ED心因性の場合、相手のことが嫌いになったわけではない</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">2</div>
-        <div class="point-item__text"><strong>責めない・急かさない</strong>——「なんで？」「またダメだった」という言葉がループを深める</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">3</div>
-        <div class="point-item__text"><strong>「気にしないよ」の一言</strong>——この言葉がパフォーマンス不安を最も効果的に和らげることがある</div>
-      </div>
-      <div class="point-item">
-        <div class="point-item__num">4</div>
-        <div class="point-item__text"><strong>医師への相談を一緒に後押しする</strong>——「病院行ってみたら？」ではなく「一緒に調べよう」という姿勢</div>
-      </div>
-    </div>
-
-    <div class="talk">
-      <div class="talk__speaker">
-        <div class="talk__icon talk__icon--a">🧠</div>
-        <span class="talk__name">田中先生</span>
-      </div>
-      <div class="talk__bubble talk__bubble--a">
-        EDは「二人の問題」です。一人で抱え込まず、二人で向き合える関係を作ることが、長期的には最も有効な解決策になります。そのための第一歩は、<strong>「言えなかった」を「言えた」に変えること</strong>から始まります。
-      </div>
-    </div>
-
-    <div class="r25-cta">
-      <h3>まずは医師への相談から</h3>
-      <p>オンラインクリニックなら匿名・自宅から相談できます。<br>一人で抱え込まず、専門家に相談する選択肢があります。</p>
+    <div class="edit-cta">
+      <h3>一人で抱え込まず、まず相談する</h3>
+      <p>オンラインクリニックなら匿名・自宅から医師に相談できます。<br>A8.net掲載クリニックを紹介しています。</p>
       <a href="shindan.html">クリニックを診断で選ぶ →</a>
     </div>
 
-    <div class="share-section">
+    <div class="edit-share">
       <p>この記事が参考になったらシェアしてください</p>
-      <div class="share-btns">
-        <button class="share-btn-r x-btn share-x">X でシェア</button>
-        <button class="share-btn-r line-btn share-line">LINE で送る</button>
+      <div class="edit-share-btns">
+        <button class="share-btn-e x-btn share-x">X でシェア</button>
+        <button class="share-btn-e line-btn share-line">LINE で送る</button>
       </div>
     </div>
 
-  </div>
+  </section>
 
 </div>
 
-<div class="r25-related">
-  <div class="r25-related__inner">
+<div class="edit-related">
+  <div class="edit-related__inner">
     <h2>関連記事</h2>
-    <div class="r25-related-grid">
-      <div class="r25-related-card" onclick="location.href='article-psychology.html'">
-        <div class="r25-related-card__cat">心理とED</div>
-        <div class="r25-related-card__title">パフォーマンス不安がEDを引き起こすメカニズム</div>
+    <div class="edit-related-grid">
+      <div class="edit-related-card" onclick="location.href='article-psychology.html'">
+        <div class="edit-related-card__cat">心理とED</div>
+        <div class="edit-related-card__title">緊張・不安がEDを引き起こすメカニズム</div>
       </div>
-      <div class="r25-related-card" onclick="location.href='article-communication.html'">
-        <div class="r25-related-card__cat">パートナーシップ</div>
-        <div class="r25-related-card__title">パートナーとのコミュニケーションとED改善</div>
+      <div class="edit-related-card" onclick="location.href='article-communication.html'">
+        <div class="edit-related-card__cat">パートナーシップ</div>
+        <div class="edit-related-card__title">EDとパートナー——伝え方と二人の向き合い方</div>
       </div>
-      <div class="r25-related-card" onclick="location.href='article-compare.html'">
-        <div class="r25-related-card__cat">薬の選び方</div>
-        <div class="r25-related-card__title">即効・持続・副作用で分けて比較する</div>
+      <div class="edit-related-card" onclick="location.href='article-sns.html'">
+        <div class="edit-related-card__cat">SNSの声</div>
+        <div class="edit-related-card__title">実際に使った人の声・疑問まとめ</div>
       </div>
-      <div class="r25-related-card" onclick="location.href='shindan.html'">
-        <div class="r25-related-card__cat">診断</div>
-        <div class="r25-related-card__title">3問で自分に合う薬タイプを診断</div>
+      <div class="edit-related-card" onclick="location.href='shindan.html'">
+        <div class="edit-related-card__cat">診断</div>
+        <div class="edit-related-card__title">3問で自分に合う薬タイプを診断</div>
       </div>
     </div>
   </div>
-</div>
-<footer role="contentinfo">
+</div><footer role="contentinfo">
   <div class="footer-inner">
     <div class="footer-logo">バイアグラなび</div>
     <div class="footer-links">
@@ -811,57 +586,46 @@ footer .footer-inner{max-width:var(--max-w);margin:0 auto}
       <a href="compare.html">薬を比較</a>
       <a href="article-compare.html">薬の選び方</a>
       <a href="article-danger.html">飲み合わせ</a>
-      <a href="article-basic.html">ED基礎知識</a>
-      <a href="article-side.html">副作用</a>
-      <a href="article-sns.html">SNSの声</a>
       <a href="article-psychology.html">心理とED</a>
+      <a href="article-sns.html">SNSの声</a>
       <a href="shindan.html">診断</a>
       <a href="privacy.html">プライバシーポリシー</a>
       <a href="compliance.html">薬機法・広告表示について</a>
     </div>
-    <p class="footer-disc">※本サイトはアフィリエイト広告（A8.net）を利用しています。</p>
+    <p class="footer-disc">※本サイトはアフィリエイト広告（A8.net）を利用しています。掲載情報は各クリニック公式サイト確認時点のものです。</p>
     <p class="footer-disc">※ED治療薬は医師の処方が必要な医療用医薬品です。本サイトの情報は一般的な医療情報の提供を目的としており、診断・治療に代わるものではありません。個人差があります。</p>
     <p class="footer-disc" style="color:rgba(255,255,255,.25)">© 2026 バイアグラなび</p>
   </div>
-</footer>
-<div class="sf">
+</footer><div class="sf">
   <button class="sf-sub" onclick="location.href='compare.html'">薬を比較</button>
   <button class="sf-main" onclick="location.href='shindan.html'">クリニックを選ぶ →</button>
-</div>
-<script>
+</div><script>
 'use strict';
-// チャプターナビ アクティブ
 (function(){
-  var items = document.querySelectorAll('.chapter-nav__item');
-  var chapters = document.querySelectorAll('.chapter[id]');
-  if(!chapters.length) return;
-  var obs = new IntersectionObserver(function(entries){
+  var items=document.querySelectorAll('.ch-nav__item');
+  var secs=document.querySelectorAll('section[id]');
+  if(!secs.length)return;
+  var obs=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){
-        items.forEach(function(i){ i.classList.remove('active'); });
-        var t = document.querySelector('.chapter-nav__item[data-target="'+e.target.id+'"]');
-        if(t) t.classList.add('active');
+        items.forEach(function(i){i.classList.remove('on');});
+        var t=document.querySelector('.ch-nav__item[data-t="'+e.target.id+'"]');
+        if(t)t.classList.add('on');
       }
     });
-  },{rootMargin:'-40% 0px -55% 0px'});
-  chapters.forEach(function(c){ obs.observe(c); });
+  },{rootMargin:'-35% 0px -60% 0px'});
+  secs.forEach(function(s){obs.observe(s);});
   items.forEach(function(item){
-    item.addEventListener('click', function(){
-      var t = document.getElementById(item.dataset.target);
-      if(t) window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});
+    item.addEventListener('click',function(){
+      var t=document.getElementById(item.dataset.t);
+      if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});
     });
   });
 })();
-// シェア
 document.querySelectorAll('.share-x').forEach(function(b){
-  b.addEventListener('click',function(){
-    window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','noopener,noreferrer');
-  });
+  b.addEventListener('click',function(){window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(document.title),'_blank','noopener,noreferrer');});
 });
 document.querySelectorAll('.share-line').forEach(function(b){
-  b.addEventListener('click',function(){
-    window.open('https://social-plugins.line.me/lineit/share?url='+encodeURIComponent(location.href),'_blank','noopener,noreferrer');
-  });
+  b.addEventListener('click',function(){window.open('https://social-plugins.line.me/lineit/share?url='+encodeURIComponent(location.href),'_blank','noopener,noreferrer');});
 });
-</script>
-</body></html>
+</script></body></html>
