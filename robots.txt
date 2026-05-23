@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 管理系・重複ページのクロール制御
+Disallow: /404.html
+
+# サイトマップ
+Sitemap: https://example.com/sitemap.xml
