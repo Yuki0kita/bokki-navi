@@ -1,0 +1,9 @@
+# Cloudflare Pages リダイレクト
+# 配置先: /public/_redirects
+
+# www -> apex
+https://www.example.com/* https://example.com/:splat 301
+
+# 旧URL保持（必要に応じて追加）
+/drug-compare.html    /compare.html    301
+/about.html           /compliance.html 301

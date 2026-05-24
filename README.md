@@ -14,6 +14,9 @@ viagranavi/
 ├── shindan.html            # 診断
 ├── compliance.html         # 薬機法・広告表示（NEW）
 ├── privacy.html            # プライバシーポリシー
+├── about.html              # 運営者情報（MA売却・A8.net審査必須）
+├── contact.html            # お問い合わせ（信頼性・法的要件）
+├── tokusho.html            # 特定商取引法（A8.net規約・法的必須）
 ├── robots.txt              # クローラー制御
 ├── sitemap.xml             # サイトマップ
 ├── nginx.conf              # Nginx本番設定
@@ -100,6 +103,10 @@ EOF
 - [ ] 体験談に「個人差あり・効果を保証しない」注記があること
 - [ ] クリニックカードに「公式サイト掲載情報・処方は医師判断」注記があること
 - [ ] compliance.htmlが正しくリンクされていること
+- [ ] about.html（運営者名・所在地）を実際の情報に更新
+- [ ] tokusho.html（運営者名・所在地・URL）を実際の情報に更新
+- [ ] contact.htmlのフォームをFormspree等の実エンドポイントに接続
+
 - [ ] 医師の処方が必要であることが明記されていること
 
 ### NGワード自動チェック
